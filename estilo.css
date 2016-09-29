@@ -1,10 +1,14 @@
+/* <==================== DESKTOP ====================> */
+/* Principal */
 body{
+	width:100%;
+	height: 100%;
 	background:url(imagens/background.jpg); /*inserção da imagem de fundo em todo o site*/
 	color:#868686; /*cor padrão para todas as fontes*/
 	font-family: "Open Sans", Helvetica, sans-serif, arial; /*definição da fonte geral incorporada do Google Fonts*/
-	font-size: 18px; /*tamanho da fonte*/
+	font-size: 18px 100%; /*tamanho da fonte*/
 	font-weight: 300; /*indica que a fonte está configurada como Open Sans Light*/
-	line-height: 22px;/*altura da linha*/
+	line-height: 22px 100%;/*altura da linha*/
 	text-align: left; /*alinhando o texto à esquerda*/
 	text-shadow:1px 1px 0px #fff; /*sombreamento para as fontes do site*/
 }
@@ -75,13 +79,11 @@ header h1 a{
 		text-indent:-9999; /*recuo para ocultar texto à esquerda*/
 		width:302px; /*largura da imagem*/
 	}
-	
 /*
 =========================
 nav - menu de navegação
 =========================
 */
-	
 nav{
 	float:right; /*posiciona menu à direita*/
 	margin-top:78px; /*distância do menu à margem superior do navegador*/
@@ -111,11 +113,9 @@ nav a:link, nav a:visited{
 nav a.ativo, nav a:hover{
 	color:#FE9380; /*indica a página ativa e o link:hover*/
 }
-
 /*----------------------------------------------------------
 Seção .CHAMADA ========================================
 ----------------------------------------------------------*/
-
 .chamada{
 	height:290px;
 	text-align:center;
@@ -131,7 +131,6 @@ Seção .CHAMADA ========================================
 		margin: 0 auto;
 		width:900px;
 	}
-	
 /*----------------------------------------------------------
 Seção .CONTAINER - Conteúdo com 3 colunas =============
 ----------------------------------------------------------*/
@@ -140,6 +139,7 @@ Seção .CONTAINER - Conteúdo com 3 colunas =============
 	height: 417px;
 	padding:30px;
 	max-width:1200px;
+	width: 100%;
 }
 .desktop, .tablet, .mobile{
 	float:left;
@@ -160,13 +160,11 @@ Seção .CONTAINER - Conteúdo com 3 colunas =============
 .tablet{
 	background-color:#FCDA92;
 }
-
 /*imagens*/
 .container .desktop figure, .container .tablet figure, .container .mobile figure {
 	margin: 15px auto 0px auto; 
 	width: 250px;
 }
-
 /*
 =========================
 formatação do texto
@@ -190,7 +188,6 @@ formatação do texto
 	text-align:justify;
 	top:225px;
 }
-
 /*
 =========================
 formatação do botão
@@ -221,7 +218,6 @@ span.btn a{
 .mobile span.btn a{
 	background-color:#9C8CB9;
 }
-
 /*----------------------------------------------------------
 Seção FOOTER - Rodape com 2 colunas &lt;&lt;&lt;&lt;&lt;===================
 ----------------------------------------------------------*/
@@ -238,243 +234,172 @@ footer{
 .desenvolvedor{
 	float:right;
 }
-
-
 /*----------------------------------------------------------
 Media Queries <<<<<=========================================
 ----------------------------------------------------------*/
-
-
-
-
-
-
-
 /*----------------------------------------------------------
 CSS Reset - Normalize.css
 ----------------------------------------------------------*/
-
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
-
 /**
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
-
 html {
   font-family: sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
-
 /**
  * Remove the margin in all browsers (opinionated).
  */
-
 body {
   margin: 0;
 }
-
 /* HTML5 display definitions
    ========================================================================== */
-
 /**
  * Add the correct display in IE 9-.
  * 1. Add the correct display in Edge, IE, and Firefox.
  * 2. Add the correct display in IE.
  */
-
-article,
-aside,
-details, /* 1 */
-figcaption,
-figure,
-footer,
-header,
-main, /* 2 */
-menu,
-nav,
-section,
-summary { /* 1 */
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary { /* 1 */
   display: block;
 }
-
 /**
  * Add the correct display in IE 9-.
  */
-
 audio,
 canvas,
 progress,
 video {
   display: inline-block;
 }
-
 /**
  * Add the correct display in iOS 4-7.
  */
-
 audio:not([controls]) {
   display: none;
   height: 0;
 }
-
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
-
 progress {
   vertical-align: baseline;
 }
-
 /**
  * Add the correct display in IE 10-.
  * 1. Add the correct display in IE.
  */
-
 template, /* 1 */
 [hidden] {
   display: none;
 }
-
 /* Links
-   ========================================================================== */
-
+========================================================================== */
 /**
  * 1. Remove the gray background on active links in IE 10.
  * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
  */
-
 a {
   background-color: transparent; /* 1 */
   -webkit-text-decoration-skip: objects; /* 2 */
 }
-
 /**
  * Remove the outline on focused links when they are also active or hovered
  * in all browsers (opinionated).
  */
-
 a:active,
 a:hover {
   outline-width: 0;
 }
-
 /* Text-level semantics
    ========================================================================== */
-
 /**
  * 1. Remove the bottom border in Firefox 39-.
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
-
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
   text-decoration: underline dotted; /* 2 */
 }
-
 /**
  * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
  */
-
-b,
-strong {
+b, strong {
   font-weight: inherit;
 }
-
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
-
-b,
-strong {
+b, strong {
   font-weight: bolder;
 }
-
 /**
  * Add the correct font style in Android 4.3-.
  */
-
 dfn {
   font-style: italic;
 }
-
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
-
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
-
 /**
  * Add the correct background and color in IE 9-.
  */
-
 mark {
   background-color: #ff0;
   color: #000;
 }
-
 /**
  * Add the correct font size in all browsers.
  */
-
 small {
   font-size: 80%;
 }
-
 /**
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
  */
-
-sub,
-sup {
+sub, sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
 }
-
 sub {
   bottom: -0.25em;
 }
-
 sup {
   top: -0.5em;
 }
-
 /* Embedded content
    ========================================================================== */
-
 /**
  * Remove the border on images inside links in IE 10-.
  */
-
 img {
   border-style: none;
 }
-
 /**
  * Hide the overflow in IE.
  */
-
 svg:not(:root) {
   overflow: hidden;
 }
-
 /* Grouping content
    ========================================================================== */
-
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
-
 code,
 kbd,
 pre,
@@ -482,87 +407,65 @@ samp {
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
-
 /**
  * Add the correct margin in IE 8.
  */
-
 figure {
   margin: 1em 40px;
 }
-
 /**
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
  */
-
 hr {
   box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
   overflow: visible; /* 2 */
 }
-
 /* Forms
    ========================================================================== */
-
 /**
  * 1. Change font properties to `inherit` in all browsers (opinionated).
  * 2. Remove the margin in Firefox and Safari.
  */
-
-button,
-input,
-select,
-textarea {
+button, input, select, textarea {
   font: inherit; /* 1 */
   margin: 0; /* 2 */
 }
-
 /**
  * Restore the font weight unset by the previous rule.
  */
-
 optgroup {
   font-weight: bold;
 }
-
 /**
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
  */
-
-button,
-input { /* 1 */
+button, input { /* 1 */
   overflow: visible;
 }
-
 /**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
  */
-
-button,
-select { /* 1 */
+button, select { /* 1 */
   text-transform: none;
 }
-
 /**
  * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
  *    controls in Android 4.
  * 2. Correct the inability to style clickable types in iOS and Safari.
  */
-
 button,
 html [type="button"], /* 1 */
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button; /* 2 */
 }
-
 /**
  * Remove the inner border and padding in Firefox.
  */
-
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -645,31 +548,48 @@ textarea {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
-
 /**
  * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
  */
-
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
-
 /**
  * Correct the text style of placeholders in Chrome, Edge, and Safari.
  */
-
 ::-webkit-input-placeholder {
   color: inherit;
   opacity: 0.54;
 }
-
 /**
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
  */
-
 ::-webkit-file-upload-button {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
+}
+/* <=================== Tablet ================> */
+@media screen and (max-width:960px){
+	/* ////  Principal //// */
+	.center{
+		margin: 0 auto; /*centralizando o conteúdo no navegador*/
+		width: 960px; /*largura do layout*/		
+		
+	}
+	/*.clearfix usado para adicionar um espaço vazio antes e depois dos elementos
+  evitando que os floats se aglomerem.
+*/
+.clearfix:before, .clearfix:after {
+    content: " "; 
+    display: table; 
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+/*fim do clearfix*/
 }
