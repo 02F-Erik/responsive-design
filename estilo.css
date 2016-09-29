@@ -3,7 +3,7 @@ CSS Reset - Normalize.css
 ----------------------------------------------------------*/
 html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:0 0}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
 /*----------------------------------------------------------
-ConfiguraÃ§Ãµes Gerais <<<<<==================================
+Configurações Gerais <<<<<==================================
 ----------------------------------------------------------*/
 body{
 	background:url(imagens/background.jpg); 
@@ -64,9 +64,6 @@ a:hover{
 	text-decoration:underline;
 	text-shadow:none; 
 }
-/*----------------------------------------------------------
-SeÃ§Ã£o HEADER - Topo do Site <<<<<===========================
-----------------------------------------------------------*/
 header{
 	border-bottom: 1px solid #E0E0E0; 
 	height:150px;
@@ -87,7 +84,7 @@ logotipo
 	}
 /*
 =========================
-nav - menu de navegaÃ§Ã£o
+nav - menu de navegação
 =========================
 */
 nav{
@@ -116,9 +113,11 @@ nav{
 			nav a.ativo:link, nav a:hover{
 				color:#FE9380; 
 			}
-/*----------------------------------------------------------
-SeÃ§Ã£o .CHAMADA <<<<<========================================
-----------------------------------------------------------*/
+/*
+----------------------------------------------------------
+Seção .CHAMADA ========================================
+----------------------------------------------------------
+*/
 .chamada{
 	height:290px;
 	text-align:center;
@@ -134,9 +133,11 @@ SeÃ§Ã£o .CHAMADA <<<<<========================================
 		margin: 0 auto;
 		width:75%; /* 900px Ã· 1200px = 0.75 x 100 = 75%*/
 	}
-/*----------------------------------------------------------
-SeÃ§Ã£o .CONTAINER - ConteÃºdo com 3 colunas <<<<<=============
-----------------------------------------------------------*/
+/*
+----------------------------------------------------------
+Seção .CONTAINER - Conteúdo com 3 colunas =============
+----------------------------------------------------------
+*/
 .container{
 	background-color:#FE9481;
 	height: 417px;
@@ -165,16 +166,7 @@ SeÃ§Ã£o .CONTAINER - ConteÃºdo com 3 colunas <<<<<=============
 }
 /*
 =========================
-figure - imagens
-=========================
-*/
-.container .desktop figure, .container .tablet figure, .container .mobile figure {
-	margin: 15px auto 0px auto; 
-	width:69.44444444444444%; /* 250px Ã· 360px = 0.6944444444444 x 100 = 69.44444444444444%*/
-}
-/*
-=========================
-formataÃ§Ã£o do texto
+formatação do texto
 =========================
 */
 .container h3{
@@ -184,6 +176,10 @@ formataÃ§Ã£o do texto
 	letter-spacing: -0.0625em; /* -2px Ã· 32px = 0.0625em */
 	margin-bottom: 30px;
 	text-shadow:none;
+}
+.container .desktop figure, .container .tablet figure, .container .mobile figure {
+	margin: 15px auto 0px auto; 
+	width:69.44444444444444%; /* 250px Ã· 360px = 0.6944444444444 x 100 = 69.44444444444444%*/
 }
 .container p{
 	background-color:#fff;
@@ -197,7 +193,7 @@ formataÃ§Ã£o do texto
 }
 /*
 =========================
-formataÃ§Ã£o do botÃ£o
+formatação do botão
 =========================
 */
 span.btn{
@@ -225,9 +221,11 @@ span.btn a{
 .mobile span.btn a{
 	background-color:#9C8CB9;
 }
-/*----------------------------------------------------------
-SeÃ§Ã£o FOOTER - Rodape com 2 colunas <<<<<===================
-----------------------------------------------------------*/
+/*
+----------------------------------------------------------
+Seção FOOTER - Rodape com 2 colunas ===================
+----------------------------------------------------------
+*/
 footer{
 	clear:both;
 	height: 50px;
@@ -244,12 +242,14 @@ footer{
 .desenvolvedor figure{
 	width:100%;
 }
-/*----------------------------------------------------------
-Media Queries <<<<<=========================================
-----------------------------------------------------------*/
+/*
+----------------------------------------------------------
+Media Queries <<<<<======================================
+----------------------------------------------------------
+*/
 
 /* 
-1200px â€“ Desktops, notebooks com monitores widescreen
+1200px (DESKTOP)
 ***********************************************************/
 @media screen and (max-width: 1200px){
 	.chamada h3 {
@@ -264,7 +264,7 @@ Media Queries <<<<<=========================================
 	}
 }
 /* 
-960px â€“ Tablets no formato paisagem e alguns monitores mais antigos
+960px (TABLETS PAISAGEM)
 ***********************************************************/
 @media screen and (max-width:960px){
 	header h1 a{
@@ -308,7 +308,7 @@ Media Queries <<<<<=========================================
 		}
 }
 /* 
-768px â€“ Tablets no formato retrato, como o iPad
+768px (TABLETS RETRATO)
 ***********************************************************/
 @media screen and (max-width:768px){
 /*cores dos links e H2*/
@@ -349,7 +349,7 @@ Media Queries <<<<<=========================================
 		}
 /*.container*/
 	.container{
-		background-color:#FCDA92;
+		background-color:#FE9481;
 		height: 380px;
 		padding:3.90625%; /* 30px Ã· 768px = 0.025 x 100 = 2.5%*/
 		width:92.1875%; /* 100% (768px) - 7.8125% de padding (direita e esquerda) = 92.1875%*/
@@ -386,7 +386,7 @@ Media Queries <<<<<=========================================
 			}
 }
 /* 
-480px â€“ Smartphones no formato paisagem com tela pequena
+480px (SMARTPHONE PAISAGEM)
 ***********************************************************/
 @media screen and (max-width:480px){
 /*Geral*/
@@ -459,7 +459,7 @@ nav{
 	}
 /*.container*/
 .container{	
-	background-color:#9C8CB9;
+	background-color:#FE9481;
 	margin:0;
 	padding:0;
 	width:100%;
@@ -501,7 +501,7 @@ nav{
 	}
 }
 /* 
-320px â€“ Smartphones no formato retrato com tela pequena
+320px (SMARTPHONES RETRATO)
 ***********************************************************/
 @media screen and (max-width:320px){
 /*cores dos links e H2*/
@@ -531,11 +531,11 @@ a:hover{
 	margin-top:20px;
 }
 	h2 {
-		font-size: 1.1111111111em; /*20px Ã· 18px*/
+		font-size: 1.1111111111em; /*20px / 18px*/
 		margin-bottom: 15px;
 	}
 	.chamada h3{
-		font-size:0.7777777778em; /*14px Ã· 18px*/
+		font-size:0.7777777778em; /*14px / 18px*/
 	}
 /*.container*/
 	.container .desktop, .container .tablet, .container .mobile{
@@ -551,6 +551,6 @@ a:hover{
 		display:none;
 	}	
 	.container p{
-		display:none; /*oculta o parÃ¡grafo*/
+		display:none; /*oculta o paragrafo*/
 	}
 }
